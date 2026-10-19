@@ -57,7 +57,8 @@ a.game:hover,a.game:focus-visible{transform:translateY(-2px);box-shadow:0 6px 0 
 .wip{margin-top:44px;padding-top:28px;border-top:3px dashed var(--line)}
 .secHead{text-align:center}
 .secHead h2{font-family:var(--display);font-weight:400;font-size:1.25rem;margin:0;color:var(--ink)}
-.secHead p{margin:2px 0 0;font-size:.85rem;color:var(--muted)}
+.secHead p{margin:2px 0 0;font-size:.85rem;color:var(--muted)}.secHead a{color:var(--ink);font-weight:700}
+.xlink a{color:var(--ink);font-weight:700}
 .wip a.game{border-style:dashed;box-shadow:none;background:color-mix(in srgb,var(--card) 70%,transparent)}
 .wip a.game:hover,.wip a.game:focus-visible{box-shadow:0 4px 0 var(--line)}
 footer{text-align:center;color:var(--muted);font-size:.85rem;margin-top:40px}
@@ -91,7 +92,7 @@ footer a{color:inherit}
   </section>
 
   <section class="games wip" aria-labelledby="wip-h">
-    <div class="secHead"><h2 id="wip-h">制作中</h2><p>まだ作っている途中のゲームです。遊べますが、ルールや見た目はこれから変わります。</p></div>
+    <div class="secHead"><h2 id="wip-h">制作中</h2><p>まだ作っている途中のゲームです。遊べますが、ルールや見た目はこれから変わります。<br>感想を <a href="https://x.com/mataasobo_games" target="_blank" rel="noopener">X</a> で教えてもらえるとうれしいです。</p></div>
     <a class="game" href="/daruma/" style="--c:var(--p3)">
       <h2>だるまさんがころんだ</h2>
       <p>だるまが言っている間だけ進める。振り向かれたときに動いていたら、見つかって押し戻されます。だるまにも子どもにもなれて、CPU の子どもたちと遊べます。</p>
@@ -100,6 +101,7 @@ footer a{color:inherit}
   </section>
 
   <footer>
+    <p class="xlink"><a href="https://x.com/mataasobo_games" target="_blank" rel="noopener">X（@mataasobo_games）</a>で、新しいゲームや作っている途中の様子をお知らせしています</p>
     <p><a href="/privacy.html">プライバシーポリシー</a></p>
     <p>© 2026 また遊ぼ</p>
   </footer>
