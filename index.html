@@ -54,15 +54,12 @@ a.game:hover,a.game:focus-visible{transform:translateY(-2px);box-shadow:0 6px 0 
 .game p{margin:0}
 .tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
 .tags span{font-size:.78rem;font-weight:700;color:var(--muted);background:var(--bg);border-radius:999px;padding:2px 10px}
-.wip{margin-top:44px;padding-top:28px;border-top:3px dashed var(--line)}
 .secHead{text-align:center}
 .lead{text-align:center;font-weight:700;color:var(--muted);margin:14px 0 0}
 #langBtn{position:absolute;top:8px;right:8px;font:700 13px var(--body);padding:4px 12px;border-radius:999px;border:2px solid var(--line);background:var(--card);color:var(--ink);cursor:pointer}
 .secHead h2{font-family:var(--display);font-weight:400;font-size:1.25rem;margin:0;color:var(--ink)}
 .secHead p{margin:2px 0 0;font-size:.85rem;color:var(--muted)}.secHead a{color:var(--ink);font-weight:700}
 .xlink a{color:var(--ink);font-weight:700}
-.wip a.game{border-style:dashed;box-shadow:none;background:color-mix(in srgb,var(--card) 70%,transparent)}
-.wip a.game:hover,.wip a.game:focus-visible{box-shadow:0 4px 0 var(--line)}
 footer{text-align:center;color:var(--muted);font-size:.85rem;margin-top:40px}
 footer a{color:inherit}
 @media (max-width:480px){main{padding-top:16px}.hero{border-radius:16px}}
@@ -77,6 +74,11 @@ footer a{color:inherit}
 
   <section class="games" aria-labelledby="games-h">
     <div class="secHead"><h2 id="games-h" data-en="Games">遊べるゲーム</h2></div>
+    <a class="game" href="/daruma/" style="--c:var(--p3)">
+      <h2 data-en="Red Light, Green Light">だるまさんがころんだ</h2>
+      <p data-en="You can only move while the Daruma is chanting. If you&#x27;re moving when it turns around, you get caught and pushed back. Play as the Daruma or as a runner against CPU players.">だるまが言っている間だけ進める。振り向かれたときに動いていたら、見つかって押し戻されます。だるまにも子どもにもなれて、CPU の子どもたちと遊べます。</p>
+      <div class="tags" data-en="&lt;span&gt;Play either side&lt;/span&gt;&lt;span&gt;vs CPU&lt;/span&gt;&lt;span&gt;Play online&lt;/span&gt;"><span>だるま役も子ども役も</span><span>CPU対戦</span><span>みんなと遊べる</span></div>
+    </a>
     <a class="game" href="/okashi-narabe/" style="--c:var(--p0)">
       <h2 data-en="Sweets in a Row">おかしならべ</h2>
       <p data-en="Line up 4 of the same sweet to eat them. Swap with an opponent&#x27;s sweet and it falls in love. Play with others and send each other stamps.">同じお菓子を4つ並べたら食べられる。相手のお菓子と入れかえると、そのお菓子は恋モードに。スタンプを送り合いながら、みんなと遊べます。</p>
@@ -91,15 +93,6 @@ footer a{color:inherit}
       <h2 data-en="Everyone&#x27;s Pick (Japanese only)">みんなの〇択</h2>
       <p data-en="Answer questions with no right answer and see what everyone picked. Compare answers with a friend to see how much you match. (Questions are in Japanese.)">正解のない質問に答えて、みんながどれを選んだか見られます。友達と答えくらべすると「ふたりの一致率」が出ます。</p>
       <div class="tags" data-en="&lt;span&gt;Everyone&lt;/span&gt;&lt;span&gt;Compare with friends&lt;/span&gt;&lt;span&gt;No sign-in&lt;/span&gt;"><span>みんなで</span><span>友達と答えくらべ</span><span>サインイン不要</span></div>
-    </a>
-  </section>
-
-  <section class="games wip" aria-labelledby="wip-h">
-    <div class="secHead"><h2 id="wip-h" data-en="In progress">制作中</h2><p data-en="Games still being made. You can play them, but the rules and look will change.&lt;br&gt;We&#x27;d love your feedback on &lt;a href=&quot;https://x.com/mataasobo_games&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;X&lt;/a&gt;.">まだ作っている途中のゲームです。遊べますが、ルールや見た目はこれから変わります。<br>感想を <a href="https://x.com/mataasobo_games" target="_blank" rel="noopener">X</a> で教えてもらえるとうれしいです。</p></div>
-    <a class="game" href="/daruma/" style="--c:var(--p3)">
-      <h2 data-en="Red Light, Green Light">だるまさんがころんだ</h2>
-      <p data-en="You can only move while the Daruma is chanting. If you&#x27;re moving when it turns around, you get caught and pushed back. Play as the Daruma or as a runner against CPU players.">だるまが言っている間だけ進める。振り向かれたときに動いていたら、見つかって押し戻されます。だるまにも子どもにもなれて、CPU の子どもたちと遊べます。</p>
-      <div class="tags" data-en="&lt;span&gt;In progress&lt;/span&gt;&lt;span&gt;Play either side&lt;/span&gt;&lt;span&gt;vs CPU&lt;/span&gt;"><span>制作中</span><span>だるま役も子ども役も</span><span>CPU対戦</span></div>
     </a>
   </section>
 
