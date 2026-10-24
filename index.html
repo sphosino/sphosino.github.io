@@ -56,6 +56,8 @@ a.game:hover,a.game:focus-visible{transform:translateY(-2px);box-shadow:0 6px 0 
 .tags span{font-size:.78rem;font-weight:700;color:var(--muted);background:var(--bg);border-radius:999px;padding:2px 10px}
 .wip{margin-top:44px;padding-top:28px;border-top:3px dashed var(--line)}
 .secHead{text-align:center}
+.lead{text-align:center;font-weight:700;color:var(--muted);margin:14px 0 0}
+#langBtn{position:absolute;top:8px;right:8px;font:700 13px var(--body);padding:4px 12px;border-radius:999px;border:2px solid var(--line);background:var(--card);color:var(--ink);cursor:pointer}
 .secHead h2{font-family:var(--display);font-weight:400;font-size:1.25rem;margin:0;color:var(--ink)}
 .secHead p{margin:2px 0 0;font-size:.85rem;color:var(--muted)}.secHead a{color:var(--ink);font-weight:700}
 .xlink a{color:var(--ink);font-weight:700}
@@ -69,42 +71,58 @@ footer a{color:inherit}
 <body>
 <main>
   <header>
-    <h1><img class="hero" src="img/hero.jpg" width="1600" height="800" alt="また遊ぼ ― ゲームで、もっと、つながる。"></h1>
+    <h1><img class="hero" src="img/hero.jpg" width="1600" height="800" alt="また遊ぼ ― ゲームで、もっと、つながる。" data-en-alt="Mataasobo: games that bring people closer"></h1>
+    <p class="lead" data-en="Free browser games to play solo or with friends. No sign-up." hidden></p>
   </header>
 
   <section class="games" aria-labelledby="games-h">
-    <div class="secHead"><h2 id="games-h">遊べるゲーム</h2></div>
+    <div class="secHead"><h2 id="games-h" data-en="Games">遊べるゲーム</h2></div>
     <a class="game" href="/okashi-narabe/" style="--c:var(--p0)">
-      <h2>おかしならべ</h2>
-      <p>同じお菓子を4つ並べたら食べられる。相手のお菓子と入れかえると、そのお菓子は恋モードに。スタンプを送り合いながら、みんなと遊べます。</p>
-      <div class="tags"><span>3人</span><span>みんなと遊べる</span><span>CPU対戦</span><span>1分であそびかた</span></div>
+      <h2 data-en="Sweets in a Row">おかしならべ</h2>
+      <p data-en="Line up 4 of the same sweet to eat them. Swap with an opponent&#x27;s sweet and it falls in love. Play with others and send each other stamps.">同じお菓子を4つ並べたら食べられる。相手のお菓子と入れかえると、そのお菓子は恋モードに。スタンプを送り合いながら、みんなと遊べます。</p>
+      <div class="tags" data-en="&lt;span&gt;3 players&lt;/span&gt;&lt;span&gt;Play online&lt;/span&gt;&lt;span&gt;vs CPU&lt;/span&gt;&lt;span&gt;Learn in 1 minute&lt;/span&gt;"><span>3人</span><span>みんなと遊べる</span><span>CPU対戦</span><span>1分であそびかた</span></div>
     </a>
     <a class="game" href="/shogi3/shogi3.html" style="--c:var(--p1)">
-      <h2>三人将棋</h2>
-      <p>9×9の盤で、3人が1局を指す将棋。ともだちと部屋で指せて、空いた席にはルールだけから学習したAIが入ります。</p>
-      <div class="tags"><span>3人</span><span>みんなと指せる</span><span>CPU対戦</span></div>
+      <h2 data-en="Three-Player Shogi">三人将棋</h2>
+      <p data-en="Shogi for 3 players on a 9×9 board. Play with friends in a room, and empty seats are filled by an AI that learned from the rules alone.">9×9の盤で、3人が1局を指す将棋。ともだちと部屋で指せて、空いた席にはルールだけから学習したAIが入ります。</p>
+      <div class="tags" data-en="&lt;span&gt;3 players&lt;/span&gt;&lt;span&gt;Play online&lt;/span&gt;&lt;span&gt;vs CPU&lt;/span&gt;"><span>3人</span><span>みんなと指せる</span><span>CPU対戦</span></div>
     </a>
     <a class="game" href="/minna-taku/" style="--c:var(--p2)">
-      <h2>みんなの〇択</h2>
-      <p>正解のない質問に答えて、みんながどれを選んだか見られます。友達と答えくらべすると「ふたりの一致率」が出ます。</p>
-      <div class="tags"><span>みんなで</span><span>友達と答えくらべ</span><span>サインイン不要</span></div>
+      <h2 data-en="Everyone&#x27;s Pick (Japanese only)">みんなの〇択</h2>
+      <p data-en="Answer questions with no right answer and see what everyone picked. Compare answers with a friend to see how much you match. (Questions are in Japanese.)">正解のない質問に答えて、みんながどれを選んだか見られます。友達と答えくらべすると「ふたりの一致率」が出ます。</p>
+      <div class="tags" data-en="&lt;span&gt;Everyone&lt;/span&gt;&lt;span&gt;Compare with friends&lt;/span&gt;&lt;span&gt;No sign-in&lt;/span&gt;"><span>みんなで</span><span>友達と答えくらべ</span><span>サインイン不要</span></div>
     </a>
   </section>
 
   <section class="games wip" aria-labelledby="wip-h">
-    <div class="secHead"><h2 id="wip-h">制作中</h2><p>まだ作っている途中のゲームです。遊べますが、ルールや見た目はこれから変わります。<br>感想を <a href="https://x.com/mataasobo_games" target="_blank" rel="noopener">X</a> で教えてもらえるとうれしいです。</p></div>
+    <div class="secHead"><h2 id="wip-h" data-en="In progress">制作中</h2><p data-en="Games still being made. You can play them, but the rules and look will change.&lt;br&gt;We&#x27;d love your feedback on &lt;a href=&quot;https://x.com/mataasobo_games&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;X&lt;/a&gt;.">まだ作っている途中のゲームです。遊べますが、ルールや見た目はこれから変わります。<br>感想を <a href="https://x.com/mataasobo_games" target="_blank" rel="noopener">X</a> で教えてもらえるとうれしいです。</p></div>
     <a class="game" href="/daruma/" style="--c:var(--p3)">
-      <h2>だるまさんがころんだ</h2>
-      <p>だるまが言っている間だけ進める。振り向かれたときに動いていたら、見つかって押し戻されます。だるまにも子どもにもなれて、CPU の子どもたちと遊べます。</p>
-      <div class="tags"><span>制作中</span><span>だるま役も子ども役も</span><span>CPU対戦</span></div>
+      <h2 data-en="Red Light, Green Light">だるまさんがころんだ</h2>
+      <p data-en="You can only move while the Daruma is chanting. If you&#x27;re moving when it turns around, you get caught and pushed back. Play as the Daruma or as a runner against CPU players.">だるまが言っている間だけ進める。振り向かれたときに動いていたら、見つかって押し戻されます。だるまにも子どもにもなれて、CPU の子どもたちと遊べます。</p>
+      <div class="tags" data-en="&lt;span&gt;In progress&lt;/span&gt;&lt;span&gt;Play either side&lt;/span&gt;&lt;span&gt;vs CPU&lt;/span&gt;"><span>制作中</span><span>だるま役も子ども役も</span><span>CPU対戦</span></div>
     </a>
   </section>
 
   <footer>
-    <p class="xlink"><a href="https://x.com/mataasobo_games" target="_blank" rel="noopener">X（@mataasobo_games）</a>で、新しいゲームや作っている途中の様子をお知らせしています</p>
-    <p><a href="/privacy.html">プライバシーポリシー</a></p>
-    <p>© 2026 また遊ぼ</p>
+    <p class="xlink" data-en="Follow &lt;a href=&quot;https://x.com/mataasobo_games&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;@mataasobo_games on X&lt;/a&gt; for new games and work in progress"><a href="https://x.com/mataasobo_games" target="_blank" rel="noopener">X（@mataasobo_games）</a>で、新しいゲームや作っている途中の様子をお知らせしています</p>
+    <p data-en="&lt;a href=&quot;/privacy.html&quot;&gt;Privacy policy&lt;/a&gt;"><a href="/privacy.html">プライバシーポリシー</a></p>
+    <p data-en="© 2026 Mataasobo">© 2026 また遊ぼ</p>
   </footer>
 </main>
+<script>
+// 言葉（2026-10-25）：日本語と英語。?lang=en・?lang=ja で選ぶと、このブラウザに覚える（ゲームと共通の mataasobo-lang）。
+//   選んでいなければブラウザの言語（日本語以外は英語）。英語の字は data-en（画像の説明は data-en-alt）
+(function(){
+  let l=null;try{l=new URLSearchParams(location.search).get('lang');if(l==='en'||l==='ja')localStorage.setItem('mataasobo-lang',l);else l=localStorage.getItem('mataasobo-lang')}catch(e){}
+  const EN=(l==='en'||l==='ja'?l:/^ja\b/i.test(navigator.language||'')?'ja':'en')==='en';
+  document.documentElement.lang=EN?'en':'ja';
+  if(EN){document.title='Mataasobo: free browser games';
+    document.querySelectorAll('[data-en]').forEach(e=>{e.innerHTML=e.dataset.en;e.hidden=false});
+    document.querySelectorAll('[data-en-alt]').forEach(e=>e.alt=e.dataset.enAlt)}
+  const b=document.createElement('button');b.type='button';b.id='langBtn';b.textContent=EN?'日本語':'EN';b.setAttribute('aria-label',EN?'日本語にする':'English');
+  b.onclick=()=>{const u=new URLSearchParams(location.search);u.set('lang',EN?'ja':'en');location.search=u};
+  document.body.appendChild(b);
+})();
+</script>
 </body>
 </html>
