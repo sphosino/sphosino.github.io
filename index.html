@@ -60,6 +60,9 @@ a.game:hover,a.game:focus-visible{transform:translateY(-2px);box-shadow:0 6px 0 
 .secHead h2{font-family:var(--display);font-weight:400;font-size:1.25rem;margin:0;color:var(--ink)}
 .secHead p{margin:2px 0 0;font-size:.85rem;color:var(--muted)}.secHead a{color:var(--ink);font-weight:700}
 .xlink a{color:var(--ink);font-weight:700}
+.wip{margin-top:44px;padding-top:28px;border-top:3px dashed var(--line)}
+.wip a.game{border-style:dashed;box-shadow:none;background:color-mix(in srgb,var(--card) 70%,transparent)}
+.wip a.game:hover,.wip a.game:focus-visible{box-shadow:0 4px 0 var(--line)}
 footer{text-align:center;color:var(--muted);font-size:.85rem;margin-top:40px}
 footer a{color:inherit}
 @media (max-width:480px){main{padding-top:16px}.hero{border-radius:16px}}
@@ -93,6 +96,15 @@ footer a{color:inherit}
       <h2 data-en="Everyone&#x27;s Pick (Japanese only)">みんなの〇択</h2>
       <p data-en="Answer questions with no right answer and see what everyone picked. Compare answers with a friend to see how much you match. (Questions are in Japanese.)">正解のない質問に答えて、みんながどれを選んだか見られます。友達と答えくらべすると「ふたりの一致率」が出ます。</p>
       <div class="tags" data-en="&lt;span&gt;Everyone&lt;/span&gt;&lt;span&gt;Compare with friends&lt;/span&gt;&lt;span&gt;No sign-in&lt;/span&gt;"><span>みんなで</span><span>友達と答えくらべ</span><span>サインイン不要</span></div>
+    </a>
+  </section>
+
+  <section class="games wip" aria-labelledby="wip-h">
+    <div class="secHead"><h2 id="wip-h" data-en="In progress">試作中</h2><p data-en="Games still being made. You can play them, but the rules and look will change.&lt;br&gt;We&#x27;d love your feedback on &lt;a href=&quot;https://x.com/mataasobo_games&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;X&lt;/a&gt;.">まだ作っている途中のゲームです。遊べますが、ルールや見た目はこれから変わります。<br>感想を <a href="https://x.com/mataasobo_games" target="_blank" rel="noopener">X</a> で教えてもらえるとうれしいです。</p></div>
+    <a class="game" href="/yoji/" style="--c:#9a6ad8">
+      <h2 data-en="Yoji Puzzle (Japanese only)">四字熟語あつめ</h2>
+      <p data-en="Kanji parts are dealt to everyone. Use the reading and meaning as clues to build a four-character idiom together. Some parts are decoys. (Japanese only.)">漢字の部品がみんなに配られます。読みと意味を手がかりに、部品を持ち寄って四字熟語を完成させよう。答えに使わない部品も混ざっています。</p>
+      <div class="tags" data-en="&lt;span&gt;In progress&lt;/span&gt;&lt;span&gt;Co-op&lt;/span&gt;&lt;span&gt;With CPU&lt;/span&gt;&lt;span&gt;Play online&lt;/span&gt;"><span>試作中</span><span>協力</span><span>CPU といっしょに</span><span>みんなと遊べる</span></div>
     </a>
   </section>
 
